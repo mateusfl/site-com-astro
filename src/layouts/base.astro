@@ -12,16 +12,25 @@ const { title } = Astro.props as Props
     <title>{title}</title>
   </head>
   <body>
-    <header class="bg-teal-200 p-3 flex items-center justify-around">
+    <header class="h-12 flex items-center justify-around">
       <h3 class="text-2xl">Meu Blog</h3>
-      <nav class="flex gap-3">
-        <a href="">Home</a>
-        <a href="">Sobre</a>
+      <nav class="flex items-center h-full">
+        <span
+          class="p-3 h-full transition-all hover:bg-primaria hover:text-branco duration-200"
+        >
+          <a href="/">Home</a>
+        </span>
+        <span
+          class="p-3 h-full transition-all hover:bg-primaria hover:text-branco duration-200"
+        >
+          <a href="/sobre">Sobre</a>
+        </span>
       </nav>
     </header>
     <slot />
-    <footer class="bg-teal-200 flex gap-3 justify-center">
+    <footer class="flex p-2 m-4 gap-3 justify-center">
       <span>Criado por Mateus Felipe</span>
+      <span class="bg-gray-800 w-px divide-y-2"></span>
       <span>2022</span>
     </footer>
   </body>
