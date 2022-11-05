@@ -1,5 +1,4 @@
 ---
-import imgSrc from '../img01.jpg'
 import Card from '../components/Card.astro'
 import Base from '../layouts/base.astro'
 
@@ -21,7 +20,7 @@ const posts = await Astro.glob('../posts/*.md')
 
   <body class="font-body text-lg bg-branco">
     <Base title="Meu Blog">
-      <main class="h-full mt-24 flex flex-col items-center gap-6">
+      <main class="my-24 mx-5 flex flex-col items-center gap-6">
         {
           posts.map((post) => (
             <Card
