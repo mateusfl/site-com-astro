@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-voltar {
+  @apply bg-primaria text-white text-sm w-fit rounded-md p-1 px-3 mt-4 hover:bg-secundaria hover:text-black;
+}
+
+body {
+  @apply font-body text-lg bg-branco;
+}

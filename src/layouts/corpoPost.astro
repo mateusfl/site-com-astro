@@ -5,10 +5,7 @@ const { frontmatter } = Astro.props
 <div
   class="bg-terciaria rounded-lg flex flex-col p-4 mx-5 my-6 md:px-12 md:mx-64"
 >
-  <a
-    class="bg-primaria text-white text-sm w-fit rounded-md p-1 px-3 mt-4 hover:bg-secundaria hover:text-black"
-    href="/">Voltar</a
-  >
+  <a class="btn-voltar" href="/">Voltar</a>
   <div class="py-6">
     <h1 class="text-3xl font-bold">{frontmatter.title}</h1>
     <p class="text-sm font-light">
@@ -18,8 +15,5 @@ const { frontmatter } = Astro.props
     </p>
   </div>
   <slot />
-  <a
-    class="bg-primaria text-white text-sm w-fit rounded-md p-1 px-3 mt-4 hover:bg-secundaria hover:text-black"
-    href="/">Voltar</a
-  >
+  <a class="btn-voltar" href="/">Voltar</a>
 </div>

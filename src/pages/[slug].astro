@@ -1,4 +1,5 @@
 ---
+import '../styles/base.css'
 import Base from '../layouts/base.astro'
 import CorpoPost from '../layouts/corpoPost.astro'
 export async function getStaticPaths() {
@@ -14,17 +15,10 @@ const { frontmatter, Content } = Astro.props.post
 ---
 
 <head>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
-    rel="stylesheet"
-  />
   <meta charset="utf-8" />
-
 </head>
-<body class="font-body text-lg bg-branco">
+
+<body>
   <Base title={frontmatter.title}>
     <CorpoPost frontmatter={frontmatter}>
       <div class="prose prose-hr:border-gray-400 prose-p:text-lg max-w-none">
